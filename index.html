@@ -5,43 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HRform</title>
-    <style>
-        img {
-            float:left;
-            margin: 0 2em 2em 0;
-        }
-        .date{
-            clear:both;
-        }
-        div{
-            margin: 2em 0;
-        }
-        caption{
-            text-align: left; 
-        }
-        ul{
-            margin: -1em 0 0 0;
-        }
-        table{
-            border-spacing: 0;
-        }
-        table, td, th{
-            border: 1px solid black;
-        }
-    </style>
+    <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
     <h1>Вакансия: Junior Frontend Developer</h1>
     <img src="./images/photo.jpg" alt="Фото кандидата" width="150">
-    <p>Имя: Галина Морозова</p>
+    <p><span>Имя:</span> Галина Морозова</p>
     <a href="https://github.com/galinamorozova/dz-form" target="_blank">Ссылка на репозиторий в GitHub</a>
-    <p>Опыт работы: нет</p>
+    <p><span>Опыт работы:</span> нет</p>
     
     <div class="date">
          <label>Дата собеседования:</label>
          <input type="date" name="Date of interview">     
     </div>
-    <div>
+    <div class="radio">
          <label>Уровень английского:</label><br>
          <label>
             <input type="radio" name="EnglishLevel" value="Bad">
@@ -82,16 +59,23 @@
          <label for="salary"> Желаемая зарплата:</label>
          <input type="number" name="salary" id="salary" placeholder="Введите значение">   
     </div>
-    <div>
+    <div class="checkbox">
         <label>Подходит по критериям:</label> <br>
         <label>
-            <input type="checkbox" name="match" value="english_level">Знание английского</label>
+            <input type="checkbox" name="match" value="english_level"> 
+            <span>Знание английского</span>
+        </label>
         <label>
-            <input type="checkbox" name="match" value="salary">Оклад</label>
+            <input type="checkbox" name="match" value="salary"> 
+            <span>Оклад</span>
+        </label>
         <label>
-            <input type="checkbox" name="match" value="skills">Навыки</label>
+            <input type="checkbox" name="match" value="skills">
+            <span>Навыки</span></label>
         <label>
-            <input type="checkbox" name="match" value="good_person">Сразу видно, что свой человек</label>
+            <input type="checkbox" name="match" value="good_person"> 
+            <span>Сразу видно, что свой человек</span>
+        </label>
     </div>
     <table>
         <caption>Образование, курсы и т.п.</caption>
