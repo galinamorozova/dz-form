@@ -3,7 +3,8 @@
     box-sizing: border-box;
 }
 body {
-    margin-left: 5em;
+    padding-left: 20%;
+    padding-right: 20%;
     background: linear-gradient(170deg, rgba(202, 166, 244, 0.8) 20%, rgba(202, 166, 244, 0.5) 20%, rgba(202, 166, 244, 0.5) 35%, rgba(142, 122, 169, 0.6) 35%, rgba(196, 174, 226, 0.8) 45%, rgba(241, 234, 250, 0.502) 45%, rgba(238, 235, 241, 0.8) 75%, rgba(163, 148, 197, 0.5) 75%), linear-gradient(45deg, rgba(230, 228, 235, 0.8) 0%, rgba(202, 166, 244, 0.8) 50%, rgba(152, 144, 172, 0.8) 50%, rgba(93, 83, 107, 0.8) 100%) #5b4f66;
 }
 .date{
@@ -48,7 +49,7 @@ span, div>p, div label:first-of-type, caption, th, button  {
     font-family: "Noto Serif";
     color: #2b162b;
     font-weight: bolder;
-    font-size: 1em;
+    font-size: 16px;
 
 }
 p, input, select, li, .checkbox label, .radio label, td {
@@ -95,14 +96,14 @@ button:hover {
 [type="date"] {
     border-radius: 5px;
 }
-.checkbox input {
+.checkbox input, .radio input {
     display: none;
 }
-.checkbox label span {
+.checkbox label span, .radio label span {
     margin-right: 6px;
     font-family: "Montserrat";
 }
-.checkbox span::before {
+.checkbox span::before, .radio span::before {
     content: '';
     display: inline-block;
     box-sizing: border-box;
@@ -114,4 +115,8 @@ button:hover {
 }
 .checkbox input:checked + span::before {
     background: linear-gradient(45deg, white 40%, purple, grey);
+}
+.radio input:checked + span::before {
+    background: white;
+    border-radius: 10px;
 }
