@@ -1,2 +1,2 @@
 # dz-form
- form for hr department
+ mockup of form for hr department
