@@ -1,2 +1,2 @@
-markup for learning purposes
+markup for learning purposes /
 учебная верстка
