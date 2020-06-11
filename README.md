@@ -1,2 +1,2 @@
-# dz-form
- mockup of form for hr department
+markup for learning purposes
+учебная верстка
